@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" style="color-scheme: dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rajat Sonawane | Business Analytics & Wealth Strategy</title>
+<meta name="description" content="Portfolio of Rajat Sonawane: Master of Global Business graduate in financial data analysis, client relationship mapping and Power BI reporting.">
+<meta name="theme-color" content="#0d0c0b">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body data-view="exec">
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="grid-lines" aria-hidden="true"></div>
+<div class="glow" id="glow" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="cur-dot" id="curDot" aria-hidden="true"></div>
+<div class="cur-ring" id="curRing" aria-hidden="true"></div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="wrap">
+    <nav class="nav" aria-label="Primary">
+      <a href="#top" class="logo" aria-label="Rajat Sonawane, home">Rajat<i>.</i>S</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <!-- Executive = short version, Deep dive = full detail -->
+        <div class="seg" role="group" aria-label="Choose resume view">
+          <button type="button" data-set-view="exec" aria-pressed="true">Executive</button>
+          <button type="button" data-set-view="deep" aria-pressed="false">Deep dive</button>
+        </div>
+        <button type="button" class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#work">Work</a>
+      <a href="#education">Education</a><a href="#certifications">Certifications</a><a href="#personal">Beyond work</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="pill rv"><b></b> Open to wealth &amp; analytics roles · Singapore</p>
+      <!-- Edit the headline here. <em> words show in the accent colour. -->
+      <h1 id="heroTitle">I turn <em>financial data</em> into decisions clients can act on.</h1>
+      <p class="hero-sum rv" style="--d:3">
+        <span class="exec-only">Master of Global Business graduate turning financial data into client-ready insight across Singapore, Dubai and London.</span>
+        <span class="deep-only">Analytically driven Master of Global Business graduate with academic and professional exposure across Singapore, Dubai and London. Experienced in financial product evaluation, client relationship mapping and data-driven market analysis, with a record of evaluating customer onboarding touchpoints, running demographic research and translating complex data into executive reports in Power BI and Tableau.</span>
+      </p>
+      <div class="hero-cta rv" style="--d:4">
+        <a href="#work" class="btn btn-primary" data-magnetic>View work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        <a href="Rajat-Sonawane-Resume.pdf" download="Rajat-Sonawane-Resume.pdf" class="btn btn-ghost" data-magnetic>Download resume
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg></a>
+      </div>
+      <!-- Stats: edit numbers/labels. data-to = number it counts up to -->
+      <dl class="stats rv" style="--d:5">
+        <div class="stat"><b data-to="3">0</b><span>campuses: Singapore, London, Dubai</span></div>
+        <div class="stat"><b data-to="3">0</b><span>internships across finance, sales and marketing</span></div>
+        <div class="stat"><b data-to="16" id="certCount">0</b><span>licences &amp; certifications</span></div>
+        <div class="stat"><b data-to="400" data-suffix="K+">0</b><span>children reached by the education frameworks I researched</span></div>
+      </dl>
+    </div>
+    <div class="portrait-wrap rv" style="--d:2">
+      <div class="portrait" id="portrait">
+        <img src="assets/rajat.jpg" alt="Portrait of Rajat Sonawane in a black blazer" width="720" height="900" fetchpriority="high">
+      </div>
+      <div class="badge"><b>Currently</b>MGB graduate · Singapore</div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills ticker: edit the list in script.js (MARQUEE) -->
+<div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="eyebrow">01 · About</span><h2 class="h2">Numbers with a human point of view.</h2></div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="rv">I like the point where data meets people: a clean dashboard, a clear recommendation, a client who understands their options.</p>
+        <p class="rv deep-only" style="--d:1">My work so far spans insurance and wealth research at HSBC Life, client onboarding and pipeline dashboards at Sinotron United, and front-office process improvements at Greenex Agro Chemicals.</p>
+        <p class="rv deep-only" style="--d:2">Studying across Singapore, London and Dubai taught me how clients differ by market and how one clear report can change a decision. I want to bring that cross-border view to tailored wealth solutions for high-net-worth clients.</p>
+        <p class="rv exec-only" style="--d:1">Insurance and wealth research (HSBC Life), client pipeline dashboards (Sinotron United) and process improvement (Greenex). <span style="color:var(--ink)">Switch to Deep dive</span> for the full story.</p>
+      </div>
+      <div class="facts">
+        <div class="card fact rv"><small>Focus</small><p>Financial data analysis, portfolio performance reporting, client relationship mapping</p></div>
+        <div class="card fact rv" style="--d:1"><small>Tools</small><p>Power BI · Tableau · data interpretation</p></div>
+        <div class="card fact rv" style="--d:2"><small>Recognition</small><p>Award for contributions to The Learning Bridge initiative · Delegate, Asia Conference (Harvard College Project for Asian and International Relations)</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="eyebrow">02 · Experience</span><h2 class="h2">Where I've put the work in.</h2>
+      <p class="lead">Tap a role to open it. Use the filters to see only the kind of work you care about.</p></div>
+    <div class="chips rv" id="tlFilters" role="group" aria-label="Filter experience"></div>
+    <div class="tl" id="tl"><div class="tl-line" aria-hidden="true"><div class="tl-fill" id="tlFill"></div></div></div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS & IMPACT ===================== -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="eyebrow">03 · Skills &amp; impact</span><h2 class="h2">What I do, and what it changed.</h2>
+      <p class="lead">Each card is a competency. Click it to see the outcome it produced.</p></div>
+    <div class="chips rv" id="skFilters" role="group" aria-label="Filter skills"></div>
+    <div class="sk-grid" id="skGrid"></div>
+  </div>
+</section>
+
+<!-- ===================== WORK GALLERY ===================== -->
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="eyebrow">04 · Selected work</span><h2 class="h2">Projects, research &amp; live events.</h2>
+      <p class="lead">Open any card for the full story.</p></div>
+    <div class="chips rv" id="pjFilters" role="group" aria-label="Filter work"></div>
+    <div class="pj-grid" id="pjGrid"></div>
+  </div>
+</section>
+
+<!-- ===================== EDUCATION ===================== -->
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="eyebrow">05 · Education</span><h2 class="h2">Three cities, one degree.</h2></div>
+    <div class="edu-grid">
+      <article class="card edu wide rv">
+        <p class="yrs">Oct 2023 – Feb 2025</p>
+        <h3>Master of Global Business (MGB)</h3>
+        <p class="org">SP Jain School of Global Management · Singapore, London, Dubai</p>
+        <p class="d"><strong style="color:var(--ink);font-weight:600">Research project, Barriers to Telemedicine Adoption:</strong> mapped regulatory and behavioural barriers to digital platform adoption and evaluated onboarding funnels to improve user conversion and operational scalability.</p>
+      </article>
+      <article class="card edu rv" style="--d:1">
+        <p class="yrs">Sept 2019 – Mar 2022</p>
+        <h3>Bachelor of Business Administration (BBA)</h3>
+        <p class="org">Institute of Management and Career Courses, Savitribai Phule Pune University</p>
+      </article>
+      <article class="card edu rv" style="--d:2">
+        <p class="yrs">Sept – Dec 2021</p>
+        <h3>Certificate in Business Analytics, Business and Social Skills</h3>
+        <p class="org">Harvard Business School Online</p>
+        <p class="d deep-only">Applied analytical frameworks to interpret business data, spot trends and communicate insights for evidence-based decisions.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CERTIFICATIONS ===================== -->
+<section id="certifications">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="eyebrow">06 · Licences &amp; certifications</span><h2 class="h2">Proof, not just claims.</h2>
+      <p class="lead">Job simulations, professional courses and licences. Where a certificate image is added, a View button opens it right here.</p></div>
+    <div class="chips rv" id="certFilters" role="group" aria-label="Filter certifications"></div>
+    <div class="cert-grid" id="certGrid"></div>
+  </div>
+</section>
+
+<!-- ===================== PERSONAL ===================== -->
+<section id="personal">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="eyebrow">07 · Beyond the CV</span><h2 class="h2">A little off the record.</h2></div>
+    <div class="flip-grid" id="flipGrid"></div>
+    <p class="egg-hint rv">Psst: the shuttlecock on the first card does something. 🏸</p>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="eyebrow rv">08 · Contact</p>
+    <h2 class="big-cta rv" style="margin-top:1.2rem">Let's <em>talk.</em></h2>
+    <div class="contact-grid">
+      <ul class="links rv">
+        <li><a href="mailto:rajat.ms23dbm015@spjain.org" data-magnetic><span class="logo-tile">@</span><span><small>Email</small><span class="t">rajat.ms23dbm015@spjain.org</span></span></a></li>
+        <li><a href="https://www.linkedin.com/in/rajat-sonawane-1b745b1a3" target="_blank" rel="noopener" data-magnetic><span class="logo-tile">in</span><span><small>LinkedIn</small><span class="t">Rajat Sonawane</span></span></a></li>
+        <li><a href="https://github.com/rajatsonawane08" target="_blank" rel="noopener" data-magnetic><span class="logo-tile">Gh</span><span><small>GitHub</small><span class="t">rajatsonawane08</span></span></a></li>
+        <li><a href="https://community.myhbx.org/u/m9s6se/#/about" target="_blank" rel="noopener" data-magnetic><span class="logo-tile white" id="hbsLogo"></span><span><small>Harvard Business School Online</small><span class="t">HBS portfolio</span></span></a></li>
+        <li><a href="tel:+918830503349" data-magnetic><span class="logo-tile">☎</span><span><small>Phone</small><span class="t">+91 88305 03349</span></span></a></li>
+      </ul>
+      <form class="card f rv" id="contactForm" novalidate style="--d:1">
+        <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required><p class="err">Please enter your name.</p></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required><p class="err">Please enter a valid email address.</p></div>
+        <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea><p class="err">Please write at least 10 characters.</p></div>
+        <button type="submit" class="btn btn-primary" style="justify-content:center" data-magnetic>Send message</button>
+        <p class="ok" id="formOk" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><div class="wrap"><span>© <span id="yr">2026</span> Rajat Sonawane</span><span>Singapore · London · Dubai</span></div></footer>
+
+<!-- Project / case-study modal -->
+<dialog id="modal" aria-labelledby="mTitle">
+  <div class="m-bar"><span id="mKicker"></span><button type="button" class="m-close" data-close aria-label="Close">✕</button></div>
+  <div class="m-scroll"><div class="m-body" id="mBody"></div></div>
+</dialog>
+
+<!-- Certificate viewer (view only) -->
+<dialog id="viewer" aria-labelledby="vTitle">
+  <div class="m-bar"><span id="vTitle"></span><button type="button" class="m-close" data-close aria-label="Close">✕</button></div>
+  <div class="m-scroll"><div class="m-body"><img id="vImg" alt="" draggable="false"></div></div>
+</dialog>
+
+</body>
+</html>
